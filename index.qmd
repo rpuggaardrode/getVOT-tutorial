@@ -1,10 +1,5 @@
 ---
 title: "Predicting VOT-related landmarks in R with `getVOT`"
-author:
-  - name: "Rasmus Puggaard-Rode"
-    url: "http://rasmuspuggaard.wordpress.com"
-    affiliations:
-      - Institute for Phonetics and Speech Processing, Ludwig Maximilian University of Munich
 date: 2023-06-13
 license: "CC-BY-SA 4.0"
 format: 
@@ -20,7 +15,9 @@ knitr:
 
 `getVOT` is a developmental R package which predicts voice onset time (VOT) automatically. It can be installed from GitHub like so:
 
-```{r, message=FALSE, warning=FALSE}
+```{r}
+#| message: false
+#| warning: false
 #install devtools if needed
 #install.packages('devtools')
 library(devtools)
@@ -137,7 +134,9 @@ text(y=-0.3, x=0.11, labels=vd_tg$stops$label, col='blue', cex=2)
 abline(v=vd_tg_predVOT$vot$t1[-1], col='blue')
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
+
 #remove programmatically created folders
 unlink('vd/vot', recursive=TRUE)
 unlink('vl/tg', recursive=TRUE)
@@ -190,7 +189,9 @@ abline(v=vl_tg_predVOT_opt$vot$t1, col='blue')
 
 There is no noticeable difference in the predicted burst location, but the predicted voicing onset location is significantly improved.
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
+
 #remove programmatically created folder
 unlink('vl/tg', recursive=TRUE)
 ```
