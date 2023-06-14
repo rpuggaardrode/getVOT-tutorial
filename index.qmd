@@ -1,5 +1,12 @@
 ---
 title: "Predicting VOT-related landmarks in R with `getVOT`"
+author:
+  - name: 
+      given: "Rasmus"
+      family: "Puggaard-Rode"
+    url: "http://rasmuspuggaard.wordpress.com"
+    affiliations:
+      - name: "Institute for Phonetics and Speech Processing, Ludwig Maximilian University of Munich"
 date: 2023-06-14
 license: "CC-BY-SA 4.0"
 format: 
