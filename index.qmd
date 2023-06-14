@@ -1,6 +1,6 @@
 ---
 title: "Predicting VOT-related landmarks in R with `getVOT`"
-date: 2023-06-13
+date: 2023-06-14
 license: "CC-BY-SA 4.0"
 format: 
   html: default
@@ -556,7 +556,7 @@ plot(dct_fit, type='l', ylab='Max. amplitude in window (smoothed)', xlab='Window
 The predicted stop release is 5 ms before we see the highest velocity in this time series. The highest velocity is indicated with a blue line here:
 
 ```{r}
-#save vector with difference between each adjacent max amplitude from smoothed time series
+#save vector with difference between each adjacent max amplitude f
 diff_amp <- diff(dct_fit)
 #replot smoothed time series
 plot(dct_fit, type='l', ylab='Max. amplitude in window (smoothed)', xlab='Window')
