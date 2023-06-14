@@ -9,6 +9,7 @@ editor: visual
 knitr: 
   opts_chunk: 
     message: false
+bibliography: references.bib
 ---
 
 ## Overview
@@ -578,6 +579,4 @@ That covers all the parameters of `negativeVOT()`.
 
 ## Source of data
 
-The sound files used for demonstrating the `getVOT` functions throughout the tutorial are in Kmhmu', taken from [this OSF repository](https://osf.io/wv6qz). The data were collected to study transphonologization of onset voicing. See the following reference:
-
-James Kirby, Pittayawat Pittayaporn, and Marc Brunelle (2023) Transphonologization of onset voicing: revisiting Northern and Eastern Kmhmu'. *Phonetica* 79(6), 591--629. doi: [10.1515/phon-2022-0029](https://doi.org/10.1515/phon-2022-0029).
+The sound files used for demonstrating the `getVOT` functions throughout the tutorial are in Kmhmu', taken from [this OSF repository](https://osf.io/wv6qz). The data were collected to study transphonologization of onset voicing. See @kirby2022
